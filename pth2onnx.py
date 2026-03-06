@@ -33,11 +33,11 @@ def GetParser():
 args = GetParser()
 
 if args.model == "ortho":
-    pth_model_path = "/data/atlas/atlasdata3/maggiechen/ESL_pth_to_onnx/Ortho_UNet_SEM_SEGMENTATION_20250821_213112.pth"
-    save_path = "/data/atlas/atlasdata3/maggiechen/ESL_pth_to_onnx/Ortho/"
+    pth_model_path = "Ortho_UNet_SEM_SEGMENTATION_20250821_213112.pth"
+    save_path = "Ortho/"
 elif args.model == "unortho":
-    pth_model_path = "/data/atlas/atlasdata3/maggiechen/ESL_pth_to_onnx/Unortho_UNet_SEM_SEGMENTATION_20250826_154450_copy_around_54.pth"
-    save_path = "/data/atlas/atlasdata3/maggiechen/ESL_pth_to_onnx/Unortho/"
+    pth_model_path = "Unortho_UNet_SEM_SEGMENTATION_20250826_154450_copy_around_54.pth"
+    save_path = "Unortho/"
 else:
     print("Model needs to be either ortho or unortho")
 os.makedirs(save_path, exist_ok=True)
